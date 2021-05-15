@@ -4,7 +4,6 @@ import {useCreateUpdateStudent, useDeleteStudent, useGetAllStudents, useGetStude
 import TableData from './TableData'
 import StudentModal from "./StudentModal";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'react-toastify/dist/ReactToastify.css';
 
 const StudentContainer = () => {
     const [getAllStudents, { data: indexData }] = useGetAllStudents();

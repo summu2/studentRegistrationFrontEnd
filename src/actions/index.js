@@ -78,8 +78,10 @@ export function useApiHandler(apiCall, options = { notify: false }) {
       const errorMsg = reqStatus.error;
       toast.error(errorMsg);
     }
+    console.log('reqStatus::: ', reqStatus);
     if (reqStatus?.data?.data?.msg) {
       const successMsg = reqStatus.data.data.msg;
+      console.log('successMsg::: ', successMsg)
       toast.success(successMsg);
     }
   }, [reqStatus]);

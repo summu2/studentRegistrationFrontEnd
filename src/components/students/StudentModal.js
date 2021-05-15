@@ -4,11 +4,6 @@ import {Button,Input, Col, Container, Label, Modal, ModalBody, ModalFooter, Moda
 const { useState } = React;
 
 const StudentModal = (props) => {
-
-    // const [firstName, setFirstName] = React.useState('');
-    // const [lastName, setLastName] = React.useState('');
-    // const [email, setEmail] = React.useState('');
-    // const [phone, setPhone] = React.useState('');
     const initialState = {
         first_name: "",
         last_name: "",
@@ -72,7 +67,7 @@ const StudentModal = (props) => {
                                     placeholder={'First Name'}
                                     name={'first_name'}
                                     defaultValue={first_name}
-                                    onKeyPress={(e) => {
+                                    onKeyUp={(e) => {
                                         handleInput(e);
                                         }
                                     }
@@ -86,7 +81,7 @@ const StudentModal = (props) => {
                                 name={'last_name'}
                                 placeholder={'Last Name'}
                                 defaultValue={last_name}
-                                onKeyPress={(e) => {
+                                onKeyUp={(e) => {
                                     handleInput(e);
                                 }
                                 }
@@ -100,7 +95,7 @@ const StudentModal = (props) => {
                                 placeholder={'Email'}
                                 name={'email'}
                                 defaultValue={email}
-                                onKeyPress={(e) => {
+                                onKeyUp={(e) => {
                                     handleInput(e);
                                 }
                                 }
@@ -114,7 +109,7 @@ const StudentModal = (props) => {
                                 name={'phone'}
                                 placeholder={'Phone'}
                                 defaultValue={phone}
-                                onKeyPress={(e) => {
+                                onKeyUp={(e) => {
                                     handleInput(e);
                                 }
                                 }
